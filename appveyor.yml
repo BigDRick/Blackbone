@@ -23,7 +23,7 @@ build:
   project: BlackBone.sln 
   
 test_script:
-  - vstest.console /logger:Appveyor build/PLATFORM/CONFIGURATION/Testing.dll
+  - vstest.console /logger:Appveyor build/$(platform)/$(configuration)/Testing.dll
 
 skip_commits:
   message: /Driver/
