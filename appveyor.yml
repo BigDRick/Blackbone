@@ -25,7 +25,7 @@ build:
 test:
   assemblies:
     only:
-      - build/Win32/Release/Testing.dll
+      - Testing.dll
 
 skip_commits:
   message: /Driver/
