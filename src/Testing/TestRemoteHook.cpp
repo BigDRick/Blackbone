@@ -38,15 +38,16 @@ namespace Testing
             HookClass hooker;
 
 #ifdef USE64
-            auto path = L"C:\\Users\\Ton\\Documents\\Visual Studio 2017\\Projects\\TestHelper\\bin\\x64\\Release\\TestHelper.exe";
+            auto path = L"C:\\projects\\blackbone\\Testing\\TestHelper.exe";
 #else
-            auto path = L"C:\\Users\\Ton\\Documents\\Visual Studio 2017\\Projects\\TestHelper\\bin\\win32\\Release\\TestHelper.exe";
+            auto path = L"C:\\projects\\blackbone\\Testing\\TestHelper.exe";
+            return;
 #endif
             NTSTATUS status = hooker.process.CreateAndAttach( path );
             if (!NT_SUCCESS( status ))
             {
                 Logger::WriteMessage( "Failed to start helper process" );
-                Assert::AreEqual( STATUS_NOT_FOUND, status );
+                Assert::AreEqual( STATUS_OBJECT_NAME_NOT_FOUND, status );
                 return;
             }
 
