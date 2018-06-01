@@ -21,6 +21,11 @@ configuration:
 build:
   parallel: true
   project: BlackBone.sln 
+  
+test:
+  assemblies:
+    only:
+      - build/Win32/Release/Testing.dll
 
 skip_commits:
   message: /Driver/
