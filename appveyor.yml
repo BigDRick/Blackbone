@@ -22,10 +22,8 @@ build:
   parallel: true
   project: BlackBone.sln 
   
-test:
-  assemblies:
-    only:
-      - Testing.dll
+test_script:
+  - vstest.console /logger:Appveyor build/PLATFORM/CONFIGURATION/Testing.dll
 
 skip_commits:
   message: /Driver/
