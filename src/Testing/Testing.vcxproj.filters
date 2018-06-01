@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TestBasic.cpp" />
+    <ClCompile Include="TestSyscall.cpp" />
+    <ClCompile Include="TestPatternScan.cpp" />
+    <ClCompile Include="TestMultuPtr.cpp" />
+    <ClCompile Include="TestRemoteCall.cpp" />
+    <ClCompile Include="TestDriver.cpp" />
+    <ClCompile Include="TestAsmVariant.cpp" />
+    <ClCompile Include="TestLocalHook.cpp" />
+    <ClCompile Include="TestRemoteMemory.cpp" />
+    <ClCompile Include="TestRemoteHook.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+  </ItemGroup>
+</Project>
